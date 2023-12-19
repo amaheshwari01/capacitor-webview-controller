@@ -297,7 +297,7 @@ public class WebviewControllerPlugin: CAPPlugin {
 
             if let url = URL(string: urlString),
                let encodedURLString = url.absoluteString.data(using: .utf8)?.base64EncodedString() {
-                let updatedURLString = "https://vc-assist.github.io/auth.html?url=\(encodedURLString)"
+                let updatedURLString = urlString;
                 if let updatedURL = URL(string: urlString) {
                     self.hidden = false
 
